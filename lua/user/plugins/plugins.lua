@@ -82,6 +82,7 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
 	use("windwp/nvim-ts-autotag")
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use("https://github.com/akinsho/toggleterm.nvim")
 
   use({
     "glepnir/lspsaga.nvim",
