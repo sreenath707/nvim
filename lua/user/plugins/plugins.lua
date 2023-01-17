@@ -84,6 +84,8 @@ return packer.startup(function(use)
 	use("svrana/neosolarized.nvim")	
 	use("windwp/nvim-ts-autotag")
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+  use "kyazdani42/nvim-web-devicons"
+  use "moll/vim-bbye"
   use("https://github.com/akinsho/toggleterm.nvim")
  
   -- Automatically set up your configuration after cloning packer.nvim
