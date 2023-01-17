@@ -75,26 +75,17 @@ return packer.startup(function(use)
 		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
 	use('neovim/nvim-lspconfig')
+  use "williamboman/nvim-lsp-installer"
+   use "williamboman/mason.nvim" -- simple to use language server installer
+  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
+  use 'jose-elias-alvarez/null-ls.nvim' -- LSP diagnostics and code actions
 	use("nvim-treesitter/nvim-treesitter")
 	use("tjdevries/colorbuddy.nvim")
 	use("svrana/neosolarized.nvim")	
-	use "williamboman/mason.nvim" -- simple to use language server installer
-  use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
 	use("windwp/nvim-ts-autotag")
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   use("https://github.com/akinsho/toggleterm.nvim")
-
-  use({
-    "glepnir/lspsaga.nvim",
-    branch = "main",
-    config = function()
-        local saga = require("lspsaga")
-
-        saga.init_lsp_saga({
-            -- your configuration
-        })
-    end,
-  })
+ 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

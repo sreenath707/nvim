@@ -1,12 +1,9 @@
+
 local servers = {
 	"sumneko_lua",
-	 "cssls",
-	 "html",
-	 "tsserver",
 	"pyright",
-	-- "bashls",
 	"jsonls",
-	-- "yamlls",
+  "tsserver"
 }
 
 local settings = {
@@ -34,6 +31,7 @@ if not lspconfig_status_ok then
 end
 
 local opts = {}
+
 for _, server in pairs(servers) do
 	opts = {
 		on_attach = require("user.plugins.lsp.handlers").on_attach,
@@ -49,4 +47,3 @@ for _, server in pairs(servers) do
 
 	lspconfig[server].setup(opts)
 end
-
