@@ -24,6 +24,7 @@ local options = {
 	si = true,
 	wrap = false,
 	backspace = 'start,eol,indent',
+  clipboard="unnamed",
 }
 
 for k,v in pairs(options) do

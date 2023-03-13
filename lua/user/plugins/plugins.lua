@@ -86,7 +86,7 @@ return packer.startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
   use "kyazdani42/nvim-web-devicons"
   use "moll/vim-bbye"
-  use("https://github.com/akinsho/toggleterm.nvim")
+  use("akinsho/toggleterm.nvim")
  
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

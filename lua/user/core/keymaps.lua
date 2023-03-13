@@ -33,3 +33,6 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 require('telescope').setup{ defaults = {file_ignore_patterns = {"./node_modules/*", "node_modules", "^node_modules/*", "node_modules/*"}} }
+
+
+keymap("n", "<Leader>l", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
