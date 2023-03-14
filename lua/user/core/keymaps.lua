@@ -17,7 +17,7 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 
 --quit and save
-keymap("n", "<Leader>q", ":q<CR>", opts)
+keymap("n", "<Leader>q", ":wq<CR>", opts)
 keymap("n", "<Leader>w", ":w<CR>", opts)
 
 
@@ -34,5 +34,6 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 require('telescope').setup{ defaults = {file_ignore_patterns = {"./node_modules/*", "node_modules", "^node_modules/*", "node_modules/*"}} }
 
-
+--linting
 keymap("n", "<Leader>l", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
+

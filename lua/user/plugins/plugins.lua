@@ -87,7 +87,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"
   use "moll/vim-bbye"
   use("akinsho/toggleterm.nvim")
- 
+  use 'ful1e5/onedark.nvim' 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
